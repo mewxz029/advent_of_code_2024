@@ -1,6 +1,10 @@
 package main
 
-import "github.com/mewxz029/advent_of_code_2024/day2/pkg"
+import (
+	"fmt"
+
+	"github.com/mewxz029/advent_of_code_2024/day2/pkg"
+)
 
 func abs(x int) int {
 	if x < 0 {
@@ -43,5 +47,5 @@ func main() {
 		panic(err)
 	}
 	count := countReportsAreSafe(reports)
-	println(count)
+	fmt.Println(count)
 }
